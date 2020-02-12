@@ -1,0 +1,6 @@
+import FWCore.ParameterSet.Config as cms
+maxEvents = cms.untracked.PSet( input = cms.untracked.int32(-1) )
+readFiles = cms.untracked.vstring()
+source = cms.Source ("PoolSource",fileNames = readFiles, lumisToProcess = cms.untracked.VLuminosityBlockRange(*('1:32877', '1:35111', '1:35198', '1:35282', '1:35320', '1:35340', '1:35473', '1:23909', '1:30700', '1:27881', '1:27237', '1:34225', '1:34341', '1:32417', '1:32206', '1:32749', '1:34338', '1:34468', '1:34375', '1:34442', '1:34008', '1:35126', '1:29298', '1:29728', '1:29871', '1:35140', '1:35066', '1:34483', '1:35690', '1:35701', ))
+)
+readFiles.extend( ['/store/mc/RunIIFall17MiniAODv2/TTbarDMJets_Dilepton_pseudoscalar_LO_TuneCP5_13TeV-madgraph-mcatnlo-pythia8/MINIAODSIM/PU2017_12Apr2018_rp_94X_mc2017_realistic_v14-v1/260000/ECAA5628-DF19-EA11-B3DA-0242AC130002.root', '/store/mc/RunIIFall17MiniAODv2/TTbarDMJets_Dilepton_pseudoscalar_LO_TuneCP5_13TeV-madgraph-mcatnlo-pythia8/MINIAODSIM/PU2017_12Apr2018_rp_94X_mc2017_realistic_v14-v1/260000/E6CE347E-2018-EA11-8EBA-AC1F6B34AA78.root']);
